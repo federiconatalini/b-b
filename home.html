@@ -2,10 +2,36 @@
 <html>
     <head>
         <title>home</title>
+        <style>
+            canvas{
+                margin-left: 542px;
+                margin-top: 50px;
+            }
+            p{
+                color: slategrey;
+            }
+        </style>
     </head>
     <body>
-        <h1>Nome b&b</h1>
-        <p>informazioni generali sul b&b</p>
-        <img src="Screenshot (44).png" alt="BOHEMIAN RHAPSODY" width="300" height="400">
+        <header>
+            <h1 style="color:slateblue;text-align:center;">Nome b&b</h1>
+        </header>
+        <canvas id="myCanvas" width="200" height="100"></canvas>
+        <script>
+            var c=document.getElementById("myCanvas");
+            var ctx=c.getContext("2d");
+            ctx.font="30px Arial";
+            ctx.fillText("Benvenuti!",10,50);
+            </script>            
+            <p>Situato in un borgo del comune di Fiastra il B&B Belvedere sul Lago è stato ricavato da un vecchio fienile risalente alla fine del ‘700.
+                Si tratta di una graziosa struttura su due livelli, accogliente e confortevole.                
+                Al piano terra il salone, dove vengono servite ricche colazioni a base di torte, crostate, pane e biscotti fatti in casa abbinati a prodotti tipici dei Monti Sibillini come miele e confetture biologiche.                Al piano superiore sono situate le due camere, una matrimoniale e l’altra con due letti singoli.
+                Il B&B ha un giardino esterno delimitato da una ringhiera e attrezzato con tavoli, sedie, sdraio e un’amaca. Per chi volesse cimentarsi con la brace, è possibile utilizzare all’occorrenza anche un funzionale barbecue.</p>
+        <img src="Screenshot (44).png" style="padding-left: 520px;" width="300" height="400">
+        <a href="tariffe.html">Guarda le nostre tariffe</a>
+        <br>
+        <footer>
+            <a href="form.html">Contattaci!</a>
+        </footer>
     </body>
 </html>
