@@ -4,3 +4,11 @@ h1{
     text-align:center;
     padding-bottom: 100px;
 }
+
+li{
+    padding-bottom: 20px;
+}
+
+.special{
+    color: teal;
+}
